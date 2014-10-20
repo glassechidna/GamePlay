@@ -591,6 +591,9 @@
 		5B2BC7641512516B00D176CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2BC7631512516B00D176CD /* libz.dylib */; };
 		6290E04A18223DCC00A28FB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290E04918223DCC00A28FB9 /* GameKit.framework */; };
 		6290E04C18223DDD00A28FB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6290E04B18223DDD00A28FB9 /* GameKit.framework */; };
+		B5AD2A5319F4D3AC00136C5B /* GameplayAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5AD2A4D19F4D3AC00136C5B /* GameplayAppDelegate.mm */; };
+		B5AD2A5419F4D3AC00136C5B /* GameplayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5AD2A4F19F4D3AC00136C5B /* GameplayView.mm */; };
+		B5AD2A5519F4D3AC00136C5B /* GameplayViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5AD2A5119F4D3AC00136C5B /* GameplayViewController.mm */; };
 		BD2636E516CF5B7400CFE15F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2636DF16CF5B7400CFE15F /* CoreMotion.framework */; };
 		BD2636E616CF5B7400CFE15F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2636E016CF5B7400CFE15F /* Foundation.framework */; };
 		BD2636E716CF5B7400CFE15F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2636E116CF5B7400CFE15F /* OpenAL.framework */; };
@@ -1218,6 +1221,13 @@
 		5BC4E7D4150F8C3C00CBE1C0 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		6290E04918223DCC00A28FB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
 		6290E04B18223DDD00A28FB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B5AD2A4C19F4D3AC00136C5B /* GameplayAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayAppDelegate.h; sourceTree = "<group>"; };
+		B5AD2A4D19F4D3AC00136C5B /* GameplayAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayAppDelegate.mm; sourceTree = "<group>"; };
+		B5AD2A4E19F4D3AC00136C5B /* GameplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayView.h; sourceTree = "<group>"; };
+		B5AD2A4F19F4D3AC00136C5B /* GameplayView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayView.mm; sourceTree = "<group>"; };
+		B5AD2A5019F4D3AC00136C5B /* GameplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayViewController.h; sourceTree = "<group>"; };
+		B5AD2A5119F4D3AC00136C5B /* GameplayViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameplayViewController.mm; sourceTree = "<group>"; };
+		B5AD2A5219F4D3AC00136C5B /* PlatformiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformiOS.h; sourceTree = "<group>"; };
 		BD2636DF16CF5B7400CFE15F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		BD2636E016CF5B7400CFE15F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BD2636E116CF5B7400CFE15F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
@@ -1258,6 +1268,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17C8BC274C388236A9C12F0D /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				B5AD2A4C19F4D3AC00136C5B /* GameplayAppDelegate.h */,
+				B5AD2A4D19F4D3AC00136C5B /* GameplayAppDelegate.mm */,
+				B5AD2A4E19F4D3AC00136C5B /* GameplayView.h */,
+				B5AD2A4F19F4D3AC00136C5B /* GameplayView.mm */,
+				B5AD2A5019F4D3AC00136C5B /* GameplayViewController.h */,
+				B5AD2A5119F4D3AC00136C5B /* GameplayViewController.mm */,
+				B5AD2A5219F4D3AC00136C5B /* PlatformiOS.h */,
+			);
+			name = ios;
+			path = src/ios;
+			sourceTree = SOURCE_ROOT;
+		};
 		420BBAA51817416D00C7B720 /* lua */ = {
 			isa = PBXGroup;
 			children = (
@@ -1641,6 +1666,7 @@
 		4234D9A314686C52003031B3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				17C8BC274C388236A9C12F0D /* ios */,
 				420BBAA51817416D00C7B720 /* lua */,
 				42CC52F71809A4EB00AAD8AD /* AbsoluteLayout.cpp */,
 				42CC52F81809A4EB00AAD8AD /* AbsoluteLayout.h */,
@@ -2407,6 +2433,7 @@
 				42CC557D1809A4EF00AAD8AD /* AIState.cpp in Sources */,
 				420BBE931817416F00C7B720 /* lua_Theme.cpp in Sources */,
 				420BBD0F1817416F00C7B720 /* lua_ImageControl.cpp in Sources */,
+				B5AD2A5419F4D3AC00136C5B /* GameplayView.mm in Sources */,
 				420BBE9F1817416F00C7B720 /* lua_ThemeThemeImage.cpp in Sources */,
 				420BBE6F1817416F00C7B720 /* lua_TerrainFlags.cpp in Sources */,
 				426F8318187F72A700640CBA /* JoystickControl.cpp in Sources */,
@@ -2422,6 +2449,7 @@
 				420BBECF1817416F00C7B720 /* lua_VertexFormatElement.cpp in Sources */,
 				42CC59531809A4EF00AAD8AD /* PhysicsHingeConstraint.cpp in Sources */,
 				420BBD131817416F00C7B720 /* lua_ImageFormat.cpp in Sources */,
+				B5AD2A5319F4D3AC00136C5B /* GameplayAppDelegate.mm in Sources */,
 				42CC55EF1809A4EF00AAD8AD /* Frustum.cpp in Sources */,
 				42CC55911809A4EF00AAD8AD /* AnimationTarget.cpp in Sources */,
 				42CC55D71809A4EF00AAD8AD /* Effect.cpp in Sources */,
@@ -2556,6 +2584,7 @@
 				42CC59B71809A4EF00AAD8AD /* ScriptTarget.cpp in Sources */,
 				420BBE9B1817416F00C7B720 /* lua_ThemeStyle.cpp in Sources */,
 				42CC59FF1809A4EF00AAD8AD /* ThemeStyle.cpp in Sources */,
+				B5AD2A5519F4D3AC00136C5B /* GameplayViewController.mm in Sources */,
 				42CC59A31809A4EF00AAD8AD /* SceneLoader.cpp in Sources */,
 				42CC556D1809A4EF00AAD8AD /* AbsoluteLayout.cpp in Sources */,
 				42CC59191809A4EF00AAD8AD /* MeshPart.cpp in Sources */,
@@ -2735,6 +2764,7 @@
 				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEPLOYMENT_LOCATION = NO;
@@ -2790,6 +2820,7 @@
 				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
 				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
