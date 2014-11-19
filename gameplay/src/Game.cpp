@@ -258,10 +258,10 @@ void Game::resume()
 void Game::exit()
 {
     // Schedule a call to shutdown rather than calling it right away.
-	// This handles the case of shutting down the script system from
-	// within a script function (which can cause errors).
-	static ShutdownListener listener;
-	schedule(0, &listener);
+    // This handles the case of shutting down the script system from
+    // within a script function (which can cause errors).
+    static ShutdownListener listener;
+    schedule(0, &listener);
 }
 
 
