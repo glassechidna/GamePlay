@@ -1685,11 +1685,6 @@ void Platform::displayKeyboard(bool display)
     }
 }
 
-void Platform::shutdownInternal()
-{
-    Game::getInstance()->shutdown();
-}
-
 bool Platform::isGestureSupported(Gesture::GestureEvent evt)
 {
     return true;

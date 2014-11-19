@@ -30,7 +30,6 @@ class ScriptController;
  */
 class Game
 {
-    friend class Platform;
     friend class ShutdownListener;
 
 public:
@@ -176,6 +175,20 @@ public:
      * @return The game window height.
      */
     inline unsigned int getHeight() const;
+
+    /**
+    * Sets the game window width.
+    *
+    * @param width The game window width.
+    */
+    inline void setWidth(unsigned int width);
+
+    /**
+    * Sets the game window height.
+    *
+    * @param height The game window height.
+    */
+    inline void setHeight(unsigned int height);
     
     /**
      * Gets the aspect ratio of the window. (width / height)

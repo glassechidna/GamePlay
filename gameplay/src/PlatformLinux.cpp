@@ -1342,6 +1342,7 @@ int Platform::enterMessagePump()
 
 void Platform::signalShutdown()
 {
+    closeAllGamepads();
 }
 
 bool Platform::canExit()
@@ -1549,12 +1550,6 @@ bool Platform::isCursorVisible()
 void Platform::displayKeyboard(bool display)
 {
     // not supported
-}
-
-void Platform::shutdownInternal()
-{
-    closeAllGamepads();
-    Game::getInstance()->shutdown();
 }
 
 bool Platform::isGestureSupported(Gesture::GestureEvent evt)

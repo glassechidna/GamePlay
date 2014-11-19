@@ -81,10 +81,11 @@ void Platform::gestureDropEventInternal(int x, int y)
 void Platform::resizeEventInternal(unsigned int width, unsigned int height)
 {
     Game* game = Game::getInstance();
-    if (game->_width != width || game->_height != height)
+
+    if (game->getWidth() != width || game->getHeight() != height)
     {
-        game->_width = width;
-        game->_height = height;
+        game->setWidth(width);
+        game->setHeight(height);
         game->resizeEvent(width, height);
         game->getScriptController()->resizeEvent(width, height);
     }

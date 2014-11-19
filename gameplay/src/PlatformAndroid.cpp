@@ -1609,11 +1609,6 @@ void Platform::displayKeyboard(bool display)
         __displayKeyboard = false;
 }
 
-void Platform::shutdownInternal()
-{
-    Game::getInstance()->shutdown();
-}
-
 bool Platform::isGestureSupported(Gesture::GestureEvent evt)
 {
     // Pinch currently not implemented
