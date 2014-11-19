@@ -29,6 +29,16 @@ inline unsigned int Game::getHeight() const
     return _height;
 }
 
+inline void Game::setWidth(unsigned int width)
+{
+    _width = width;
+}
+
+inline void Game::setHeight(unsigned int height)
+{
+    _height = height;
+}
+
 inline float Game::getAspectRatio() const
 {
     return (float)_width / (float)_height;

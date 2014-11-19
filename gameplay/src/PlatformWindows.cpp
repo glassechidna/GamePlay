@@ -354,8 +354,7 @@ LRESULT CALLBACK __WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
         return 0;
 
     case WM_DESTROY:
-        gameplay::Platform::shutdownInternal();
-        PostQuitMessage(0);
+        Game::getInstance()->exit();
         return 0;
 
     case WM_LBUTTONDOWN:
@@ -995,7 +994,6 @@ int Platform::enterMessagePump()
 
             if (msg.message == WM_QUIT)
             {
-                gameplay::Platform::shutdownInternal();
                 return msg.wParam;
             }
         }
@@ -1032,7 +1030,7 @@ int Platform::enterMessagePump()
 
 void Platform::signalShutdown() 
 {
-    // nothing to do  
+    PostQuitMessage(0);
 }
 
 bool Platform::canExit()
@@ -1346,11 +1344,6 @@ void Platform::pollGamepadState(Gamepad* gamepad)
 #else
 void Platform::pollGamepadState(Gamepad* gamepad) { }
 #endif
-
-void Platform::shutdownInternal()
-{
-    Game::getInstance()->shutdown();
-}
 
 bool Platform::launchURL(const char* url)
 {
