@@ -1406,9 +1406,9 @@ int Platform::enterMessagePump()
     return 0;
 }
 
-void Platform::signalShutdown() 
+void Platform::signalShutdown()
 {
-    // nothing to do  
+    ANativeActivity_finish(__state->activity);
 }
 
 bool Platform::canExit()
