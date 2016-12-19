@@ -2805,11 +2805,11 @@
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					"../external-deps/bullet/include",
-					"../external-deps/lua/include",
-					"../external-deps/png/include",
-					"../external-deps/ogg/include",
-					"../external-deps/vorbis/include",
+					"$(PROJECT_DIR)/../external-deps/bullet/include",
+					"$(PROJECT_DIR)/../external-deps/lua/include",
+					"$(PROJECT_DIR)/../external-deps/png/include",
+					"$(PROJECT_DIR)/../external-deps/ogg/include",
+					"$(PROJECT_DIR)/../external-deps/vorbis/include",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -2861,11 +2861,11 @@
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
-					"../external-deps/bullet/include",
-					"../external-deps/lua/include",
-					"../external-deps/png/include",
-					"../external-deps/ogg/include",
-					"../external-deps/vorbis/include",
+					"$(PROJECT_DIR)/../external-deps/bullet/include",
+					"$(PROJECT_DIR)/../external-deps/lua/include",
+					"$(PROJECT_DIR)/../external-deps/png/include",
+					"$(PROJECT_DIR)/../external-deps/ogg/include",
+					"$(PROJECT_DIR)/../external-deps/vorbis/include",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				LINK_WITH_STANDARD_LIBRARIES = NO;
