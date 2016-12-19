@@ -7,7 +7,7 @@
 # Helps prevent repo bloat due to large binary files
 #
 
-prefix=https://github.com/blackberry/GamePlay/releases/download/v3.0.0
+prefix=https://github.com/glassechidna/GamePlay/releases/download/v3ish
 
 filename=gameplay-deps
 
